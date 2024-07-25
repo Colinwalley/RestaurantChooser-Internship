@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Website Title</title>
+	<style>
+	.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+.content{
+padding:20px;}
+.allergy {
+text-align:left;
+padding:30px;}
+.paragraph {
+text-align: center;
+position: absolute;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px;
+  width: 300px;
+  left: 700px;
+  height: 250px;
+}
+</style>
+</head>
+<div class="header">
+  <h1>Random Restaurant Chooser!</h1>
+  <p>Using AI to ease your indecisive mind😌</p>
+</div>
+
+<body>
+<div class = "content">
+<label>Input your location:</label>
+<input id = "location" placeholder = "Make sure to put your city">
+<br>
+<label for="Name">Input how long in minutes you would like your food to arrive:</label>
+<input type="text" id = "Name" name = "Name" placeholder = "EX: 15">
+<br>
+<label for = "Allergy List">Check off any allergies you have:</label>
+</div>
+<div class = "paragraph" id="ResponseArea"></div>
+<div class = "allergy">
+<label for = "Milk">Milk:</label>
+<input type = "checkbox" id= "Milk" name = "Milk" >
+<br>
+<label for = "Eggs">Eggs:</label>
+<input type = "checkbox" id= "Eggs" name = "Eggs" >
+<br>
+<label for = "Fish">Fish (e.g., bass, flounder, cod):</label>
+<input type = "checkbox" id= "Fish" name = "Fish" >
+<br>
+<label for = "Crustacean shellfish">Crustacean shellfish (e.g., crab, lobster, shrimp):</label>
+<input type = "checkbox" id ="Shellfish" name = "Crustacean shellfish" >
+<br>
+<label for = "Tree nuts">Tree nuts (e.g., almonds, walnuts, pecans):</label>
+<input type = "checkbox" id= "Nuts" name = "Tree nuts" >
+<br>
+<label for = "Peanuts">Peanuts:</label>
+<input type = "checkbox" id ="Peanuts" name = "Peanuts" >
+<br>
+<label for = "Wheat">Wheat:</label>
+<input type = "checkbox" id ="Wheat" name = "Wheat" >
+<br>
+<label for = "Soybeans">Soybeans:</label>
+<input type = "checkbox" id= "Soybeans" name = "Soybeans" >
+<br>
+<label for = "Sesame">Sesame:</label>
+<input type = "checkbox" id ="Sesame" name = "Sesame" >
+</div>
+<br>
+<p><label>Input any foods you definitely don't want: </label></p>
+
+<textarea id="Dontfoods" name = "Dontfoods" rows="4" cols = "50" placeholder="Divide items by a comma (,)")>
+</textarea>
+<br>
+<br>
+<label>Budget:</label>
+<input id = "Budget" placeholder="EX: 60">
+<br>
+<div class= "content">
+
+<button type ="button" id = "submitbutton" >Submit Form </button>
+</div>
+<iframe
+src="https://www.chatbase.co/chatbot-iframe/ivE_zLmZMzZXKpY9y4ODP"
+width="100%"
+style="height: 100%; min-height: 700px"
+frameborder="0"
+></iframe>
+<script src="index.js"></script>
+</body>
+</html>
